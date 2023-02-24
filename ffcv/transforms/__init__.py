@@ -8,6 +8,7 @@ from .replace_label import ReplaceLabel
 from .normalize import NormalizeImage
 from .translate import RandomTranslate
 from .mixup import ImageMixup, LabelMixup, MixupToOneHot
+from .cutmix import ImageCutMix, LabelCutMix
 from .module import ModuleWrapper
 from .randaugment import RandAugment
 
@@ -17,5 +18,6 @@ __all__ = ['ToTensor', 'ToDevice',
            'RandomResizedCrop', 'RandomHorizontalFlip', 'RandomTranslate',
            'RandAugment',
            'Cutout', 'ImageMixup', 'LabelMixup', 'MixupToOneHot',
+           'ImageCutMix', 'LabelCutMix',
            'Poison', 'ReplaceLabel',
            'ModuleWrapper']
